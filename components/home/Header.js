@@ -13,6 +13,8 @@ const handleSignOut = async () => {
   }
 };
 
+const randomNumber = Math.floor(Math.random() * 20 + 1);
+
 const Header = ({ navigation }) => {
   return (
     <View style={styles.container}>
@@ -44,7 +46,7 @@ const Header = ({ navigation }) => {
 
         <TouchableOpacity>
           <View style={styles.unread}>
-            <Text style={styles.unreadBadge}>6</Text>
+            <Text style={styles.unreadBadge}>{randomNumber}</Text>
           </View>
           <Image
             source={{

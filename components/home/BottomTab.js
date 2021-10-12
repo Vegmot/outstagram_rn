@@ -26,7 +26,7 @@ const BottomTab = ({ icons }) => {
 
       <View style={styles.container}>
         {icons.map((icon, index) => (
-          <Icon key={index} icon={icon} />
+          <Icon key={index.toString()} icon={icon} />
         ))}
       </View>
     </View>
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    height: 50,
+    height: 40,
     paddingTop: 16,
   },
   icon: {
