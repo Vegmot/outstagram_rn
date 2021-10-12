@@ -6,7 +6,7 @@ import {
   STORAGE_BUCKET,
   MESSAGING_SENDER_ID,
   APP_ID,
-} from 'react-native-dotenv';
+} from './keys';
 
 const config = {
   apiKey: API_KEY,
